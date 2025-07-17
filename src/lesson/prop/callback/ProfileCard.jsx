@@ -1,16 +1,21 @@
 import PropTypes from "prop-types";
+import "./App.css";
 
-function ProfileCard({ name, age, isMember, hobbies }) {
+function ProfileCard({ name, age, isMember, hobbies, onClickHobby }) {
   return (
-    <div>
+    <div className="profile-card">
       <h3>Name: {name}</h3>
       <h3>Age: {age}</h3>
       <h3>Status: {isMember ? "Active Member" : "Guest"}</h3>
-      <h3>hobbies: </h3>
+      <h3>Hobbies</h3>
       <ul>
-        {hobbies.map((hobby, index) => (
-          <li key={index}>{hobby}</li>
-        ))}
+        {hobbies.map((hobby, index) => {
+          return (
+            <li key={index} onClick={() => onClickHobby(hobby)}>
+              {hobby}
+            </li>
+          );
+        })}
       </ul>
     </div>
   );

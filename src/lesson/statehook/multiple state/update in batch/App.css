@@ -1,0 +1,34 @@
+* {
+  margin: 0px;
+}
+
+.app-container {
+  background-color: rgb(241, 237, 237);
+  padding: 20px;
+  text-align: center;
+}
+
+.app-container input {
+  border: 1px solid rgba(15, 4, 4, 0.245);
+  border-radius: 20px;
+  padding: 20px;
+  margin-right: 20px;
+  font-weight: bold;
+}
+
+.app-container button {
+  border: 1px solid rgba(15, 4, 4, 0.245);
+  border-radius: 20px;
+  padding: 20px;
+  background-color: lightblue;
+  cursor: pointer;
+  margin-right: 20px;
+}
+
+.app-container button:hover {
+  background-color: lightcyan;
+}
+
+.app-container h1 {
+  margin-bottom: 20px;
+}
